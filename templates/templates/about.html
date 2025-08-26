@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="text-center mb-5">About Me</h1>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Career Objective</h3>
+                    <p class="card-text">{{ data.about }}</p>
+                </div>
+            </div>
+            
+            <h3 class="mb-4">Education</h3>
+            {% for edu in data.education %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ edu.degree }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ edu.institution }}</h6>
+                    <p class="card-text">{{ edu.period }} | {{ edu.score }}</p>
+                </div>
+            </div>
+            {% endfor %}
+            
+            <h3 class="my-4">Achievements</h3>
+            <ul class="list-group mb-4">
+                {% for achievement in data.achievements %}
+                <li class="list-group-item">{{ achievement }}</li>
+                {% endfor %}
+            </ul>
+            
+            <h3 class="my-4">Hobbies</h3>
+            <div class="d-flex flex-wrap">
+                {% for hobby in data.hobbies %}
+                <span class="badge bg-secondary m-1 p-2">{{ hobby }}</span>
+                {% endfor %}
+            </div>
+            
+            <h3 class="my-4">Languages</h3>
+            <div class="d-flex flex-wrap">
+                {% for language in data.languages %}
+                <span class="badge bg-info m-1 p-2">{{ language }}</span>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

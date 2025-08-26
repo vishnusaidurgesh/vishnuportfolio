@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5 pt-5">
+    <h1 class="text-center mb-5">My Projects</h1>
+    
+    <div class="row">
+        {% for project in data.projects %}
+        <div class="col-lg-8 mx-auto">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">{{ project.title }}</h3>
+                    <p class="card-text">{{ project.description }}</p>
+                    <div class="mt-3">
+                        <span class="badge bg-primary">Python</span>
+                        <span class="badge bg-secondary">Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div class="text-center mt-4">
+        <p>More projects coming soon as I continue my learning journey!</p>
+    </div>
+</div>
+{% endblock %}

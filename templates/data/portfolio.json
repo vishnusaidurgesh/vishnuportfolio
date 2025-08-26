@@ -1,0 +1,53 @@
+{
+    "name": "A. Vishnu Sai Durgesh",
+    "title": "Computer Science Student",
+    "email": "23q71a4401@aietta.ac.in",
+    "phone": "9502062004",
+    "address": "#54-11-23/10, Alliance College Backside, Bakery Café Backside, Maddilapalem, Visakhapatnam",
+    "about": "To secure a responsible position in the field of Computer Science and Engineering where I can utilize my programming skills, knowledge, and communication abilities to contribute to organizational growth while continuously learning and enhancing my technical and personal skills.",
+    "education": [
+        {
+            "degree": "B.Tech (CSE - Data Science)",
+            "institution": "Avanthi Institute of Engineering and Technology",
+            "period": "2023 - 2027",
+            "score": "7.43 CGPA"
+        },
+        {
+            "degree": "Intermediate (MPC)",
+            "institution": "NRI Junior College, MVP Colony",
+            "period": "2021 - 2023",
+            "score": "80%"
+        },
+        {
+            "degree": "SSC (10th)",
+            "institution": "Sri Sarada Vidya Nilayam, Seethammadhara",
+            "period": "2020 - 2021",
+            "score": "9.8 GPA"
+        }
+    ],
+    "skills": {
+        "programming": ["Python", "C", "Java"],
+        "database": ["SQL"],
+        "tools": ["VS Code"],
+        "other": ["Problem-solving", "Logical thinking", "Communication"]
+    },
+    "projects": [
+        {
+            "title": "House Maintenance and Advance Techniques",
+            "description": "Designed a project to improve house maintenance using automation and modern techniques. Applied coding skills to simplify management and provide efficient solutions."
+        }
+    ],
+    "achievements": [
+        "Secured 3rd prize in Quiz Competition at Sri Sarada Vidya Nilayam",
+        "Won 1st prize in Bull Fight Competition",
+        "Active member of Scouts and Guides at school",
+        "Achieved 1st prize in Cricket Tournament on Freshers' Day at Avanthi Institute of Engineering and Technology (R23 Batch)"
+    ],
+    "hobbies": [
+        "Reading Books",
+        "Learning Coding & Exploring Technology",
+        "Watching TV",
+        "Dancing"
+    ],
+    "languages": ["English", "Telugu"]
+}

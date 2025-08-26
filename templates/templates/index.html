@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h1 class="display-4 fw-bold">A. Vishnu Sai Durgesh</h1>
+                <h2 class="text-primary mb-4">Computer Science Student</h2>
+                <p class="lead mb-4">{{ data.about }}</p>
+                <div class="d-flex">
+                    <a href="{{ url_for('projects') }}" class="btn btn-primary me-3">View Projects</a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-primary">Contact Me</a>
+                </div>
+            </div>
+            <div class="col-lg-6 hero-img">
+                <img src="{{ url_for('static', filename='images/pro.jpeg') }}" class="img-fluid rounded-circle" alt="Profile Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Technical Skills</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Programming Languages</h5>
+                        <p class="card-text">
+                            {% for skill in data.skills.programming %}
+                                <span class="badge bg-primary me-1">{{ skill }}</span>
+                            {% endfor %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Database</h5>
+                        <p class="card-text">
+                            {% for skill in data.skills.database %}
+                                <span class="badge bg-primary me-1">{{ skill }}</span>
+                            {% endfor %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Tools & Others</h5>
+                        <p class="card-text">
+                            {% for skill in data.skills.tools %}
+                                <span class="badge bg-primary me-1">{{ skill }}</span>
+                            {% endfor %}
+                            {% for skill in data.skills.other %}
+                                <span class="badge bg-secondary me-1">{{ skill }}</span>
+                            {% endfor %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
