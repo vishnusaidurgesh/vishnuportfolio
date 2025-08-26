@@ -46,4 +46,7 @@ def contact_success():
     return render_template('contact_success.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Get the port from the environment variable or use 10000 as default
+    port = int(os.environ.get('PORT', 10000))
+    # Run the app on all available IPs (0.0.0.0) and the specified port
+    app.run(host='0.0.0.0', port=port, debug=False)
